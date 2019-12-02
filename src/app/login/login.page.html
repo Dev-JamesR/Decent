@@ -1,0 +1,52 @@
+<ion-header translucent>
+  <ion-toolbar>
+
+    <ion-title>Login</ion-title>
+
+    <ion-buttons slot="primary" routerLink="/signup">
+      <ion-button (click)="openModal()">
+        Sign up
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Login To Your Decent Account</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="ion-align-items-center">
+      <ion-list>
+        <ion-item>
+          <ion-input mode="ios" color="quater" maxlength="32" type="text" placeholder="Please Enter your Username/Email Address"></ion-input>
+          <ion-icon name="mail"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-input mode="ios" color="quater" minlength="6" type="password" placeholder="Please Enter your Password"></ion-input>
+          <ion-icon name="lock"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row center>
+    <ion-col text-center>
+
+      <ion-button size="auto" routerLink="/signup">
+        <ion-icon name="close"></ion-icon>
+        Cancel
+      </ion-button>
+
+      <ion-button size="auto">
+        Login
+        <br>
+        <ion-icon name="log-in"></ion-icon>
+      </ion-button>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>
