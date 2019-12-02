@@ -1,0 +1,23 @@
+.button-solid {
+  --background: #840032;
+  --background-focused: #313131;
+  --background-hover: #313131;
+  --color: #ffffff;
+  --color-activated: #ffffff;
+  --color-focused: #ffffff;
+  display: inline-block;
+}
+
+section {
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+}
+
+.full-width > header,
+section:not(.full-width) {
+  padding: 0 10px;
+}
+
+.ion-button {
+  display: inline-block;
+}
