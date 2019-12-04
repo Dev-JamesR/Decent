@@ -10,6 +10,9 @@ export class MainModalPage implements OnInit {
 
   modalTitle: string;
   //modelId: number;
+  contact1 = 'Fallen';
+  contact2 = 'Adam';
+  contact3 = 'Eve';
 
   constructor(
     private modalController: ModalController,
