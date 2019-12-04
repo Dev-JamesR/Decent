@@ -33,7 +33,7 @@
   <ion-toolbar>
     <ion-row class="ion-align-items-center ion-no-padding">
       <ion-col size="10">
-        <textarea placeholder="Type Your Message" autosize maxRows="4" rows="1" [(ngModel)]="message" (keydown.enter)="onKeydown($event)" (keyup.enter)="sendMessage()" spellcheck="true" class="message-input text-input"></textarea>
+        <textarea placeholder="Type Your Message" autosize maxRows="4" rows="1" min-length="1" [(ngModel)]="message" (keydown.enter)="onKeydown($event)" (keyup.enter)="sendMessage()" spellcheck="true" class="message-input text-input"></textarea>
       </ion-col>
       <ion-col size="2">
         <ion-button expand="block" fill="clear" (click)="sendMessage()" [disabled]="message === ''" class="send-button">
