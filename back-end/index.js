@@ -54,7 +54,6 @@ function start() {
                 .then((id) => {
                     info = id
                     openSocket()
-		    openSocket()
                 })
                 .catch((error) => onError(error))
         })
